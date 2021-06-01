@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Danh sách nhân viên</title>
+
+    <!-- Phần thư viện -->
+                <!-- Bootstrap.css, Jqueryui.css -->
+    <!-- Phần dùng chung -->
+    <link rel="stylesheet" href="../Assets/Css/Common/common.css">
+    <!-- Phần riêng từng màn hình -->
+    <link rel="stylesheet" href="../Assets/Css/Views/Department/department.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <!-- Phần header -->
+        <div class="header">
+            Danh sach phòng ban
+        </div>
+
+        <!-- Phần nội dung -->
+        <div class="content d-flex">
+            <!-- Phần sidebar -->
+            <div class="sidebar">
+                Sidebar
+            </div>
+
+            <!-- Phần thay thế nội dung từng trang -->
+            <div class="main-content flex-1">
+                <!-- Danh sách nhân viên -->
+                <div id="gridDepartment" Url="api/Department">
+                    <div class="hide-item">
+                        <div class="col" FieldName="DepartmentCode">Mã phòng ban</div>
+                        <div class="col" FieldName="DepartmentName">Tên phòng ban</div>
+                        <div class="col" FieldName="CreatedDate" DataType="Date">Ngày tạo</div>
+                        <div class="col" FieldName="CreatedBy">Người tạo</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Phần thư viện -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+     <!-- Phần dùng chung -->
+     <script src="../Scripts/Common/Constant.js"></script>
+     <script src="../Scripts/Common/Enumeration.js"></script>
+     <script src="../Scripts/Common/Resource.js"></script>
+     <script src="../Scripts/Common/common.js"></script>
+     <script src="../Scripts/Base/BaseGrid.js"></script>
+
+     <!-- Phần riêng từng màn hình -->
+     <script src="../Scripts/Views/department/department.js"></script>
+</body>
+</html>

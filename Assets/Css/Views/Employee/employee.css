@@ -1,0 +1,30 @@
+*{}
+
+.buttonItem {
+    padding: 10px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+div#toolBarEmployee {
+    height: 40px;
+    margin: 5px;
+    width: 100%;
+    background: #efcda7;
+}
+
+div#gridEmployee {
+    width: 100%;
+}
+
+.selected-row{
+    background: rgb(141, 108, 108);
+}
+
+.formContent{
+    width: 600px;
+    height: 450px;
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+}

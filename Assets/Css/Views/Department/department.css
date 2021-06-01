@@ -1,0 +1,9 @@
+*{}
+
+div#gridDepartment {
+    width: 100%;
+}
+
+.selected-row{
+    background: rgb(25, 194, 115);
+}
